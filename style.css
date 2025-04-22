@@ -86,7 +86,7 @@ p{
 
 img {
   max-width: 100%;
-  height: auto;
+ 
 }
 
 header {
@@ -108,13 +108,13 @@ margin-right:30px;
   font-size: 2rem;
   display: flex;
   flex-direction: row;
-  height:70px;
+  max-height:70px;
   justify-content:space-around;
   padding :10px;
   /* position:fixed;  */
   /* background-color:#a01616; */
   background-color:#6d6d6f; 
-  width : auto;
+  
   left:0;
   top:0;
   z-index: 5;
@@ -190,7 +190,7 @@ nav ul li {
     padding:0px 10px;	
     margin : 0px 10px 0px 10px;
     color:#FFF;
-    font: size 1rem;;
+    
     line-height: 30px;
     text-decoration:none;
 
@@ -226,19 +226,19 @@ nav ul ul {
 
 
 
-#maries {
 
-height : 70px;
-/* width:132; */
-}
 
 #ormaries {
-  height : 70px;
-  width:132px 
+  max-height : 70px;
+ 
   }
   
 
-
+  #maries {
+    display : block;
+   
+    max-height: 70px;
+  }
 
 #bouton_zone{
   display:flex;
@@ -256,7 +256,8 @@ margin : 50px;
 margin-top : 100px;  
 display :grid;
 grid-template-columns: 600px 600px;
-grid-template-rows: minmax(100px auto);
+grid-template-rows: minmax(100px, auto);
+
 justify-content:space-around;
 /* justify-content:center; */
 }
@@ -323,13 +324,21 @@ height :80px;
   margin-right:15px;
 }
 
-
+.ovale{
+  display : block;
+  max-width: 160px;
+ 
+}
 
 .blason{
   display : block;
-  max-width: auto;
+
   max-height: 85px; 
 }
+
+
+
+
 .blason:hover  {
   transform: scale(0.8);
   transition:all 0.5s ease;
@@ -337,7 +346,7 @@ height :80px;
 
 .geneanet_logo{
   /* display : block; */
-  max-width: auto;
+ 
   max-height: 120px; 
 }
 .geneanet_logo:hover  {
@@ -349,10 +358,11 @@ height :80px;
   /* display : block; */
   max-height: 120px; 
   margin:10px 20px;
+  transition:all 2s ease;
 }
 .poche_logo:hover  {
   transform: scale(3.0);
-  transition:all 0.5s ease;
+  transition:all 2s ease;
 }
 
 
@@ -452,16 +462,33 @@ height :80px;
  margin-right: auto;
 }
 
-.photo_pos_absolute_yes {
+.photo_pos_absolute_bot {
+  display:block;
   position: absolute; 
-  right:0px;
-  opacity: 0;
-  transition : opacity ease 1s;
- }
+  left:100px;
+  bottom: 100px;
+  transition:all 2s ease;
+  }
  
+ .photo_pos_absolute_bot:hover {
+    left:350px;
+    bottom:100px;
+    transform: scale(3);
+    cursor:pointer;
+    transition:all 2s ease;
+   }
+
+
+
+
+
+
+
+
  .photo_pos_absolute_yes:hover {
    opacity: 1;
    cursor: pointer;
+   transition : opacity ease 2s;
   }
  
 .opacity_0 {
@@ -642,6 +669,18 @@ justify-content: center;
 align-items: center;
 }
 
+.photo_carentin {
+  position :relative;
+ width: 1130px;
+ height: 678px;
+ margin:auto; 
+ /* display: flex; */
+ justify-content: center; 
+ align-items: center;
+ }
+ 
+
+
 #bienvenue p {
   font-size: 2.0rem; 
   color :#4b3c22;
@@ -737,7 +776,7 @@ transition:all 2s ease;
 
 #grand_rue_left {
   max-height: 250px; 
-  max-width: auto;
+ 
   position: absolute;
   opacity: 1;
   /* left :220px;
@@ -1008,17 +1047,10 @@ transform: scale(1.8) translateX(50px) ;
 cursor:pointer;
 }
 
-#photo_journal:hover  ~ img {
+/* #photo_journal:hover  ~ img {
   opacity : 1;
-}
+} */
 
-#text_journal {
-position : absolute;
-  display: block;
-opacity :0;
-max-width :900px;
-transition:all 2s ease;
-}
 
 #end_accueil {
   position :relative; 
@@ -1193,6 +1225,7 @@ position : absolute;
   height: auto;
   opacity:0;
   z-index: 3;
+  transition:all 2s ease;
 }
 .alexandre_enhancer:hover  {
   opacity:1;
