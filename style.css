@@ -154,6 +154,7 @@ margin: 0px 0px 0px 0px;
 }
 
 #menu_nav {
+  position: relative;
   width:auto;
   height:50px;
   background: rgba(218, 165, 32, .95); 
@@ -224,7 +225,14 @@ nav ul ul {
   font-size: 12px;
 }
 
-
+.page_courante {
+  /* font-size:2rem; */
+  position: absolute;
+  height:50px;
+   
+  left: 150px;
+  padding-bottom: 40px;
+ }
 
 
 
@@ -593,8 +601,8 @@ height :80px;
 }
 
 .bordure_geneanet {
-  border: 6px solid #379481;
-  border-radius: 30px;
+ /*  border: 6px solid #379481;
+  border-radius: 30px; */
   /* width: 1130px; */
   width:fit-content;
   margin:auto;
@@ -610,7 +618,7 @@ height :80px;
 p.geneanet {
   color: #379481;
   font-weight: bold;
-  font-size:1.1rem;
+  font-size:1.5rem;
 }
 
 .bordure_poche {
