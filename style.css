@@ -1051,7 +1051,7 @@ text-indent:0%;
 }
 
 .photo_pompier:hover {
-transform: scale(1.8) translateX(50px) ;
+transform: scale(2) translateX(50px) ;
 cursor:pointer;
 }
 
