@@ -1178,6 +1178,13 @@ position : absolute;
   height: 10px;
  }
  
+
+.div_margin_50 {
+  /* height: 5px; */
+  height: 50px;
+ }
+ 
+
  .h4_photo_noces {
   margin-top : 5px;
   margin-bottom : 5px;
